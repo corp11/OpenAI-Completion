@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="form">
+        <h1>Enter Prompt</h1>
+        <textarea id="input" name="body" type="text"></textarea>
+        <div>
+            <button id="clear">Clear</button>
+            <button id="button">Submit</button>
+        </div>  
+    </div>
+
+    <div class="options">
+        <div>
+            <p class="para">Engine</p>
+            <select class="header" id="selectEngine" name="engine">
+                <option value="text-davinci-002">text-davinci-002</option>
+                <option value="text-curie-001">text-curie-001</option>
+                <option value="text-babbage-001">text-babbage-001</option>
+                <option value="text-ada-001">text-ada-001</option>
+          </select>
+         </div>
+         
+       <div class="recc">
+         <p class="para">Recommended Prompts</p>
+         <select class="header" id="choices">
+            <option value="Another One bites the">Another One bites the</option>
+            <option value="Mary had a little">Mary had a little</option>
+            <option value="Rock paper scissors">Rock paper scissors</option>
+        </select>
+       </div>
+    </div>
+     
+
+     
+    <div id="load">
+    </div>
+
+    <div id="dummyDiv"> 
+    </div> 
+</body>
+<script src="../client.js"></script>
+</html>
